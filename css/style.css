@@ -1,0 +1,179 @@
+body{
+    color:#212121;
+    font-family: "cursive";
+}
+
+a:link{
+    text-decoration:none ;
+    color:#212121;
+}
+
+a:visited{
+    text-decoration:none;
+    color:#212121;
+}
+
+a:hover{
+    text-decoration:none;
+    color:#212121;
+}
+
+a:active{
+    text-decoration:none;
+    color:#212121;
+}
+
+header{
+    width:100%;
+    height:60px;
+}
+
+.head-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.head-container .head-brand{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.head-container .head-blog{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.head-container .head-blog a:visited{
+    text-decoration:none;
+    color:#212121;
+}
+
+.head-container .head-blog a:hover{
+    text-decoration:none;
+    color:#8282EB;
+    cursor:grab;
+}
+
+
+
+.main{
+    height:360px;
+    background:center;
+    background-image: url("https://mb.ntdtv.kr/assets/uploads/2019/03/sdf-4-795x436.jpg");  
+    background-repeat: no-repeat;
+    background-color:rgb(0, 0, 0);
+    position:relative;
+}
+
+.main-container{
+    opacity:0.5;
+    position:relative;
+}
+
+.text-container{
+    padding:200px 100px 100px 100px;
+}
+
+.text-container .title{
+    font-size:28px;
+    font-weight: bold;
+    color:white;
+    position:relative;
+    margin-bottom: 0.4rem;
+}
+
+.text-container .message{
+    font-size:21px;
+    color:white;
+    position:relative;
+}
+
+.skill{
+    display:flex;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    border-radius:11px;
+    
+}
+
+.skill-container{
+    margin:1rem;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.skill-icon{
+    font-size: 2.5rem;
+    margin: 5px 10px;
+}
+
+.skill-name{
+    margin: 5px 10px 0px 8px;
+    font-weight: 700;
+}
+
+.skill-usage{
+    margin: 0px 10px 5px 8px;
+    font-weight: 700;
+}
+
+.carnegie-style{
+    color:tomato;
+}
+
+.napoleon-style{
+    color:thistle;
+}
+
+.clement-style{
+    color:royalblue;
+}
+
+.steve-style{
+    color:sandybrown;
+}
+
+.inner{
+    width:100%;
+    margin: 0 auto  
+}
+
+.section-container{
+    display:flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+
+.roadmap-title{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.arrow-container{
+    font-size:2.0rem;
+}
+
+.arrow-container .slide-right{
+    color:darkgray;
+}
+
+.class-list{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .inner {
+      max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width:980px){
+    .skill-box{
+        display: none !important;
+    }
+}
