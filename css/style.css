@@ -1,3 +1,4 @@
+
 body{
     color:#212121;
     font-family: "cursive";
@@ -162,8 +163,58 @@ header{
 .class-list{
     display:flex;
     justify-content: space-between;
+    list-style:none;
+    padding:0;
 }
 
+.class-card{
+    width:240px;
+    min-width:240px;
+    margin: 10px 10px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    border-radius:8px 8px 8px 8px;
+}
+
+.class-card:hover{
+    box-shadow: -20px 20px 28px -10px rgba(25, 42, 70, 0.13);
+}
+
+.class-container{
+
+    margin: 5px 5px 10px 5px;
+}
+
+.class-container-skill{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:6px;
+}
+
+.class-container-skill-text{
+    font-size:13px;
+    color:silver;
+}
+
+.class-container-skill-level{
+    font-size:15px;
+    background-color: purple;
+    color:white;
+    border-radius:5px 5px;
+}
+
+.class-maintitle{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-bottom:3px;
+    font-weight:900;
+}
+
+.class-subtitle{
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
 
 
 @media only screen and (min-width: 1200px) {
