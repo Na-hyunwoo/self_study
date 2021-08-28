@@ -117,7 +117,8 @@ header{
 
 .skill-usage{
     margin: 0px 10px 5px 8px;
-    font-weight: 700;
+    font-weight: 600;
+    color:silver;
 }
 
 .carnegie-style{
@@ -138,7 +139,8 @@ header{
 
 .inner{
     width:100%;
-    margin: 0 auto  
+    margin: 0 auto ;
+    overflow: hidden;
 }
 
 .section-container{
@@ -154,10 +156,17 @@ header{
 
 .arrow-container{
     font-size:2.0rem;
+    display:flex;
+}
+
+.arrow-container .slide-left{
+    margin:0;
+    color:#212121;
 }
 
 .arrow-container .slide-right{
     color:darkgray;
+    margin-left:5px;
 }
 
 .class-list{
@@ -173,10 +182,12 @@ header{
     margin: 10px 10px;
     box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
     border-radius:8px 8px 8px 8px;
+    transition:1s;
 }
 
 .class-card:hover{
     box-shadow: -20px 20px 28px -10px rgba(25, 42, 70, 0.13);
+    transition:0.3s;
 }
 
 .class-container{
@@ -216,6 +227,9 @@ header{
     overflow:hidden;
 }
 
+img{
+    border-radius: 8px 8px 0 0;
+}
 
 @media only screen and (min-width: 1200px) {
     .inner {
