@@ -231,6 +231,23 @@ img{
     border-radius: 8px 8px 0 0;
 }
 
+footer{
+    background-color:#f8f9fa;
+    padding: 2rem 0 2rem 2rem;
+    
+}
+
+.footer-message{
+    font-weight:700;
+    
+}
+
+.footer-contact{
+    margin-bottom:11px;
+}
+
+
+
 @media only screen and (min-width: 1200px) {
     .inner {
       max-width: 1200px;
