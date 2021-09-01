@@ -274,7 +274,27 @@ footer{
     opacity:0;
     visibility: hidden;
     z-index:999;
+}
 
+#backtotop::after{
+    content:"\f077";
+    font-family:FontAwesome;
+    font-size:1.5rem;
+    line-height:40px;
+    color:#fff;
+
+}
+
+#backtotop.show{
+    opacity:1;
+    visibility:visible;
+    background-color:rgb(47,48,49);
+
+}
+
+#backtotop.show:hover{
+    cursor:pointer;
+    background-color:#2186c4;
 }
 
 @media only screen and (min-width: 1200px) {
