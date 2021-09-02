@@ -285,17 +285,17 @@ footer{
 
 }
 
+#backtotop.show:hover{ 
+    background-color:#2186c4;
+    cursor:grab;
+}
+
 #backtotop.show{
     opacity:1;
     visibility:visible;
     background-color:rgb(47,48,49);
-
 }
 
-#backtotop.show:hover{
-    cursor:pointer;
-    background-color:#2186c4;
-}
 
 @media only screen and (min-width: 1200px) {
     .inner {
