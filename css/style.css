@@ -182,7 +182,7 @@ header{
 
 .class-list{
     display:flex;
-    justify-content: space-between;
+    
     list-style:none;
     padding:0;
 }
@@ -287,7 +287,7 @@ footer{
 
 #backtotop.show:hover{ 
     background-color:#2186c4;
-    cursor:grab;
+    cursor:pointer;
 }
 
 #backtotop.show{
