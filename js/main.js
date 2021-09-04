@@ -21,8 +21,27 @@ backToTop.addEventListener('click',moveBackToTop);
 
 /*---------------------------------------------------------------*/
 
-const transformPrev = ()=>{
-    
+function transformPrev(event){
+    const slidePrev=event.target;
+    const slideNext=slidePrev.nextElementSibling;
+
+    const classList=slidePrev.parentElement.parentElement.nextElementSibling;
+    let activeLi=classList.getAttribute('data-postion');
+    const liList=classList.getElementsByTagName('li');
+
+    if(classList.clientWidth<(liList.length*260+Number(activeLi))){
+        activeLi=Number(activeLi)-260;
+
+        if(classList.clientWidth>(liList.length*260+Number(activeLi))){
+            slidePrev.style.color='#cfd8dc';
+            slidePrev.classList.remove('slide-prev-hover');
+        }
+        slideNext.style.color='#2f3059';
+        slideNext.classList.add('slide-next-hover');
+    }
+    classList.style.transition='transform 1s';
+    classList.style.transform='translateX('+String(activeLi)+'px)';
+    classList.setAttribute('data-position',activeLi);
 }
 
 const slidePrevList=document.getElementsByClassName('slide-prev');
