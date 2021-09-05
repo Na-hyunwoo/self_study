@@ -164,20 +164,31 @@ header{
 }
 
 .arrow-container{
-    font-size:2.0rem;
+    font-size:2rem;
     display:flex;
 }
 
-.arrow-container .slide-left{
+.arrow-container .slide-prev{
     cursor:pointer;
     margin:0;
     color:#212121;
 }
 
-.arrow-container .slide-right{
+.arrow-container .slide-prev-hover:hover{
+    transition:0.5s;
+    transform:translateX(-2px);
+}
+
+.arrow-container .slide-next{
     cursor:pointer;
     color:darkgray;
-    margin-left:5px;
+    margin-left:2px;
+    margin-right:2px;
+}
+
+.arrow-container .slide-next-hover:hover{
+    transition:0.5s;
+    transform:translateX(2px);
 }
 
 .class-list{
