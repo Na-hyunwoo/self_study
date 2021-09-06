@@ -237,6 +237,10 @@ header{
     border-radius:5px 5px;
 }
 
+.class-desc:hover{
+    color:#2186c4;
+}
+
 .class-maintitle{
     white-space:nowrap;
     overflow:hidden;
@@ -250,6 +254,8 @@ header{
     text-overflow:ellipsis;
     overflow:hidden;
 }
+
+
 
 img{
     border-radius: 8px 8px 0 0;
@@ -307,6 +313,13 @@ footer{
     background-color:rgb(47,48,49);
 }
 
+ul li img:hover{
+    cursor:grab;
+}
+
+ul li img:active{
+    cursor:grabbing;
+}
 
 @media only screen and (min-width: 1200px) {
     .inner {
