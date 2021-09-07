@@ -87,3 +87,47 @@ for(let i=0;i<slidePrevList.length;i++){
         arrowContainer.removeChild(slidePrevList[i]);
     }
 }
+
+
+/*------------------------------------------------------------------------------------*/
+
+let touchstartX;
+let currentClassList;
+let currentImg;
+let currentActiveLi;
+let nowActiveLi;
+let mouseStart;
+
+function processTouchMove(event){
+
+}
+
+function processTouchStart(event){
+    mouseStart=true;
+
+    event.preventDefault();
+    touchstartX=event.clientX;
+    currentIImg=event.target;
+
+    currentImg.addEventListener('mousemove',processTouchMove);
+    currentImg.addEventListener('mouseup',processTouchEnd);
+
+    currentClassList=currentImg.parentElement.parentElement;
+    currentActiveLi=currentClassList.getAttribute('data-position');
+
+}
+
+function processTouchEnd(event){
+
+}
+
+window.addEventListener('dragend',processTouchEnd);
+window.addEventListener('mouseup',processTouchEnd);
+
+const classImgLists=document.querySelector('ul li img');
+for(let i=0;i<classImgLists.length;i++){
+    classImgLists[i].addEventListener('mousedown',processTouchStart);
+}
+
+
+
