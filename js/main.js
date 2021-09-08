@@ -90,7 +90,7 @@ for(let i=0;i<slidePrevList.length;i++){
 
 
 /*------------------------------------------------------------------------------------*/
-
+/*
 let touchstartX;
 let currentClassList;
 let currentImg;
@@ -99,7 +99,13 @@ let nowActiveLi;
 let mouseStart;
 
 function processTouchMove(event){
+    event.preventDefault();
 
+    let currentX=event.clientX || event.touches[0].screenX;
+    nowActiveLi=Number(currentActiveLi)+Number(currentX)-Number(touchstartX);
+
+    currentClassList.style.transition='transform 0s linear';
+    currentClassList.style.transform='translateX(' + String(nowActiveLi)+'px)';
 }
 
 function processTouchStart(event){
@@ -107,7 +113,7 @@ function processTouchStart(event){
 
     event.preventDefault();
     touchstartX=event.clientX;
-    currentIImg=event.target;
+    currentImg=event.target;
 
     currentImg.addEventListener('mousemove',processTouchMove);
     currentImg.addEventListener('mouseup',processTouchEnd);
@@ -128,6 +134,6 @@ const classImgLists=document.querySelector('ul li img');
 for(let i=0;i<classImgLists.length;i++){
     classImgLists[i].addEventListener('mousedown',processTouchStart);
 }
-
+*/
 
 
