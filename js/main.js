@@ -90,7 +90,7 @@ for(let i=0;i<slidePrevList.length;i++){
 
 
 /*------------------------------------------------------------------------------------*/
-/*
+
 let touchstartX;
 let currentClassList;
 let currentImg;
@@ -134,6 +134,6 @@ const classImgLists=document.querySelector('ul li img');
 for(let i=0;i<classImgLists.length;i++){
     classImgLists[i].addEventListener('mousedown',processTouchStart);
 }
-*/
+
 
 
